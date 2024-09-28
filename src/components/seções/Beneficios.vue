@@ -6,7 +6,7 @@
                 A Monere melhora a produtividade, reduz custos e previne doenças, trazendo ganhos reais ao produtor rural.            
             </p>
         </div>
-        <div class="flex gap-5 flex-wrap border border-corVerde">
+        <div class="flex gap-5 flex-wrap border">
             <Card
             v-for="(card, index) in cards"
             :key="index"
