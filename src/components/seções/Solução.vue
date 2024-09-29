@@ -1,11 +1,11 @@
 <template>
     <section class="flex flex-col gap-10">
         <div class="flex flex-col gap-1 max-w-[749px]" >
-            <h1 class="text-corBranca text-[40px] font-bold text-wrap" >Como a Monere Transforma a Gestão de Saúde do Rebanho</h1>
+            <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Como a Monere Transforma a Gestão de Saúde do Rebanho</h1>
             <p class="text-corTextoSecundario" >
                 A Monere estabelece um ecossistema, prevenindo doenças, aumentando a produtividade e reduzindo custos no campo.            </p>
         </div>
-        <div class="flex flex-row gap-5">
+        <div class="flex flex-row gap-5 mobile:flex-wrap">
             <Card
             v-for="(card, index) in cards"
             :key="index"

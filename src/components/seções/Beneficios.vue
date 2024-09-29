@@ -1,12 +1,12 @@
 <template>
     <section class="flex flex-col gap-10">
         <div class="flex flex-col gap-1 max-w-[749px]" >
-            <h1 class="text-corBranca text-[40px] font-bold text-wrap" >Resultados que Fazem a Diferença</h1>
+            <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Resultados que Fazem a Diferença</h1>
             <p class="text-corTextoSecundario" >
                 A Monere melhora a produtividade, reduz custos e previne doenças, trazendo ganhos reais ao produtor rural.            
             </p>
         </div>
-        <div class="flex gap-5 flex-wrap border">
+        <div class="flex gap-5 flex-wrap">
             <Card
             v-for="(card, index) in cards"
             :key="index"

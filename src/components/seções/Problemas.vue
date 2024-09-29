@@ -1,12 +1,12 @@
 <template>
     <section class="flex flex-col gap-10">
         <div class="flex flex-col gap-1" >
-            <h1 class="text-corBranca text-[40px] font-bold text-wrap" >Desafios na Pecuária Moderna</h1>
+            <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Desafios na Pecuária Moderna</h1>
             <p class="text-corTextoSecundario" >
             Gestão ineficiente e desperdício de recursos ameaçam a produtividade na pecuária atual.
             </p>
         </div>
-        <div class="flex flex-row gap-5 md:flex-col">
+        <div class="flex flex-row gap-5 md:flex-col mobile:flex-col">
             <Card
             v-for="(card, index) in cards"
             :key="index"
