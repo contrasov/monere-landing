@@ -1,5 +1,5 @@
 <template>
-<div class="flex flex-row gap-16 mobile:flex-col mobile:gap-2" >
+<div id="sobre" class="flex flex-row gap-16 mobile:flex-col mobile:gap-2" >
     <h1 class="text-corBranca text-[64px] font-bold text-nowrap mobile:text-[24px]" >Sobre Monere</h1>
     <p class="text-corTextoSecundario" >A Monere é um sistema desenvolvida pela software house Auris, focada em monitoramento da saúde bovina. 
         Utilizando sensores e inteligência artificial, a Monere permite o acompanhamento contínuo do 
