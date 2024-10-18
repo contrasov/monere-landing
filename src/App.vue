@@ -7,7 +7,7 @@ import Principal from './components/Principal.vue'
   <section id="background" class="bg-cover bg-center px-[60px] py-[24px] mobile:px-[12px]  big:px-80">
     <Header/>
   </section>
-  <div class="px-[60px] mobile:px-[12px] mo:px-[-10px] big:px-80">
+  <div class="px-[60px] mobile:px-[12px] big:px-80">
     <Principal/>
   </div>
 </template>
