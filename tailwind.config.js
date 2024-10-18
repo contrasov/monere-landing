@@ -7,8 +7,8 @@ export default {
   theme: {
     screens: {
       'mobile': {'max': '480px'},
-      'mo': {'min': '1366px', 'max': '1699px'},
-      'big': {'min': '1700px'},
+      'mo': {'min': '1366px', 'max': '1366px'},
+      'big': {'min': '1367px', 'max': '1920px'},
     },
 
     colors: {

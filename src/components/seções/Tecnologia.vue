@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-row justify-between">
+    <section id="tecnologia" class="flex flex-row justify-between">
         <div class="flex flex-col gap-10">
             <div class="flex flex-col gap-1 max-w-[492px]" >
                 <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Tecnologia de Ponta para o Campo</h1>

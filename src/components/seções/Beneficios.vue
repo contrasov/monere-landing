@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-col gap-10">
+    <section id="beneficios" class="flex flex-col gap-10">
         <div class="flex flex-col gap-1 max-w-[749px]" >
             <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Resultados que Fazem a Diferença</h1>
             <p class="text-corTextoSecundario" >

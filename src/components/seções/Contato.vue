@@ -1,7 +1,7 @@
 <template>
-    <section class="flex flex-row justify-between items-center 
+    <section id="contato" class="flex flex-row justify-between items-center 
     mobile:flex-wrap mobile:gap-8 mobile:justify-center">
-        <div class="flex flex-col gap-1 max-w-fit text-center hidden mobile:block" >
+        <div class="flex-col gap-1 max-w-fit text-center hidden mobile:block" >
             <h1 class="text-corBranca text-[50px] font-bold text-wrap mobile:text-[24px]" >Monere: Inovação a Serviço da Pecuária</h1>
             <p class="text-corTextoSecundario" >
                 Junte-se à Monere e apoie a inovação na pecuária. Entre em contato para parcerias e faça parte dessa transformação no campo!
