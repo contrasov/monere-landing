@@ -13,11 +13,14 @@ export default {
 
     colors: {
       background: '#0F0F0F',
-      corVerde: '#0DCC5A',
-      corBorda: '#2B2B2B',
+      corVerdeClaro: '#0DCC5A',
+      corVerdeEscuro: '#0F7337',
+      corBorda: '#0F7337',
       corBranca: '#FFFFFF',
       corTextoSecundario: '#868686',
-      corCard: '#121212',
+      corCard: '#0F0F0F',
+      corCardSec: '#2B2B2B'
+
     },
     extend: {},
   },

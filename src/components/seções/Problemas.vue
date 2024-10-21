@@ -1,7 +1,7 @@
 <template>
     <section id="problemas" class="flex flex-col gap-10">
         <div class="flex flex-col gap-1 fade-in">
-            <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Desafios na Pecuária Moderna</h1>
+            <h1 class="text-corVerdeClaro text-[40px] font-bold text-wrap mobile:text-[24px]" >Desafios na Pecuária Moderna</h1>
             <p class="text-corTextoSecundario" >
             Gestão ineficiente e desperdício de recursos ameaçam a produtividade na pecuária atual.
             </p>
