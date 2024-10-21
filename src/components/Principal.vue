@@ -8,7 +8,7 @@
         <Contato/>
         <div class="flex flex-col gap-6">
             <div class="bg-[#2A2A2A] min-h-[1px]"></div>
-            <p class="text-corTextoSecundario text-[14px]">© 2024 Auris.</p>
+            <p class="text-corTextoSecundario text-[14px]">© 2024 Darp.</p>
         </div>
     </div>
 </template>

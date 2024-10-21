@@ -11,11 +11,11 @@
         <div class="flex flex-col gap-6">
             <span class="flex flex-row gap-6">
                 <img src="/src/assets/mail-02.svg">
-                <p class="font-bold text-corBranca text-[24px]">email@email.com</p>
+                <p class="font-bold text-corBranca text-[24px]">sistemamonere@gmail.com</p>
             </span>
             <span class="flex flex-row gap-6">
                 <img src="/src/assets/message-notification-circle.svg">
-                <p class="font-bold text-corBranca text-[24px]">(85) 99999-9999</p>
+                <p class="font-bold text-corBranca text-[24px]">(85) 98142-8261</p>
             </span>
             <span class="flex flex-row gap-6">
                 <img src="/src/assets/marker-pin-01.svg">
