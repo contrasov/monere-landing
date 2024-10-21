@@ -1,6 +1,6 @@
 <template>
     <section id="tecnologia" class="flex flex-row justify-between">
-        <div class="flex flex-col gap-10">
+        <div class="flex flex-col gap-10 fade-in opacity-0">
             <div class="flex flex-col gap-1 max-w-[492px]" >
                 <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Tecnologia de Ponta para o Campo</h1>
                 <p class="text-corTextoSecundario" >
@@ -23,10 +23,31 @@
                 </span>
             </div>
         </div>
-        <img src="/src/assets/cards-image.svg" class="max-h-[435px] mobile:hidden">
+        <img src="/src/assets/cards-image.svg" class="max-h-[435px] mobile:hidden slide-right opacity-0">
     </section>
 </template>
 
 <script>
-
+export default {
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+        this.handleScroll(); // Check on mount
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    el.classList.add('animate');
+                }
+            });
+        }
+    }
+}
 </script>

@@ -21,3 +21,31 @@
   background-position: center;
   height: 700px;
 }
+
+.fade-in {
+    @apply opacity-0; /* Start with opacity 0 */
+    transition: opacity 1s; /* Slower transition for smooth effect */
+}
+
+.slide-left {
+    @apply opacity-0; /* Start with opacity 0 */
+    transform: translateX(-200px);
+    transition: opacity 2s, transform 1s; /* Slower transitions for smooth effect */
+}
+
+.slide-right {
+    @apply opacity-0; /* Start with opacity 0 */
+    transform: translateX(200px);
+    transition: opacity 2s, transform 1s; /* Slower transitions for smooth effect */
+}
+
+.fade-in.animate {
+    @apply opacity-100; /* Apply full opacity when animate class is added */
+}
+
+.slide-left.animate,
+.slide-right.animate {
+    @apply opacity-100; /* Apply full opacity when animate class is added */
+    transform: translateX(0);
+}
+

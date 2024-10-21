@@ -1,6 +1,6 @@
 <template>
     <section id="problemas" class="flex flex-col gap-10">
-        <div class="flex flex-col gap-1" >
+        <div class="flex flex-col gap-1 fade-in">
             <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Desafios na Pecuária Moderna</h1>
             <p class="text-corTextoSecundario" >
             Gestão ineficiente e desperdício de recursos ameaçam a produtividade na pecuária atual.
@@ -12,6 +12,7 @@
             :key="index"
             :title="card.title"
             :description="card.description"
+            :class="index % 2 === 0 ? 'slide-left' : 'slide-right'"
             />
         </div>
     </section>
@@ -33,7 +34,28 @@ export default {
                 {title: 'Alto custo com tratamentos corretivos', description: 'A falta de prevenção leva a tratamentos corretivos caros e maior uso de medicamentos.',}
             ]
         }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+        this.handleScroll(); // Check on mount
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            const elements = document.querySelectorAll('.fade-in, .slide-left, .slide-right');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    el.classList.add('animate');
+                } else {
+                    el.classList.remove('animate');
+                }
+            });
+        }
     }
 }
-
 </script>

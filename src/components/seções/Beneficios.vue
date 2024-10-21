@@ -1,6 +1,6 @@
 <template>
     <section id="beneficios" class="flex flex-col gap-10">
-        <div class="flex flex-col gap-1 max-w-[749px]" >
+        <div class="flex flex-col gap-1 max-w-[749px] fade-in">
             <h1 class="text-corBranca text-[40px] font-bold text-wrap mobile:text-[24px]" >Resultados que Fazem a Diferença</h1>
             <p class="text-corTextoSecundario" >
                 A Monere melhora a produtividade, reduz custos e previne doenças, trazendo ganhos reais ao produtor rural.            
@@ -12,6 +12,7 @@
             :key="index"
             :title="card.title"
             :description="card.description"
+            :class="index % 2 === 0 ? 'slide-left' : 'slide-right'"
             />
         </div>
     </section>
@@ -36,7 +37,28 @@ export default {
                 {title: 'E mais', description: 'traremos mais recursos e melhorias para transformar ainda mais a gestão da sua propriedade.'},
             ]
         }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+        this.handleScroll(); // Check on mount
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            const elements = document.querySelectorAll('.fade-in, .slide-left, .slide-right');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    el.classList.add('animate');
+                } else {
+                    el.classList.remove('animate');
+                }
+            });
+        }
     }
 }
-
 </script>

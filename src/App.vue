@@ -11,4 +11,3 @@ import Principal from './components/Principal.vue'
     <Principal/>
   </div>
 </template>
-

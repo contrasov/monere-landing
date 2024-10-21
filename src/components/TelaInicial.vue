@@ -35,6 +35,15 @@ export default {
                     top: offsetPosition,
                     behavior: 'smooth'
                 });
+
+                // Ajuste a duração do scroll (em milissegundos)
+                const scrollDuration = 999;
+                setTimeout(() => {
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'auto'
+                    });
+                }, scrollDuration);
             } else {
                 console.error(`Element with ID ${sectionId} not found`);
             }
