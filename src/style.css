@@ -48,4 +48,3 @@
     @apply opacity-100; /* Apply full opacity when animate class is added */
     transform: translateX(0);
 }
-

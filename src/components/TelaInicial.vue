@@ -10,7 +10,7 @@
                 <li @click="scrollToSection('beneficios')"><a href="#">Benefícios</a></li>
             </ul>
         </div>
-        <button @click="scrollToSection('contato')" class="text-corBranca bg-corVerde rounded-lg px-[15px] py-[2px]">
+        <button @click="scrollToSection('contato')" class="text-corBranca bg-corVerdeClaro rounded-lg px-[15px] py-[2px]">
             Contato
         </button>
     </div>

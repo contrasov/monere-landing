@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import Sobre from './seções/Sobre.vue'
-import Problemas from './seções/Problemas.vue'
-import Solução from './seções/Solução.vue'
-import Tecnologia from './seções/Tecnologia.vue'
-import Beneficios from './seções/Beneficios.vue';
-import Contato from './seções/Contato.vue';
+    import Sobre from './seções/Sobre.vue'
+    import Problemas from './seções/Problemas.vue'
+    import Solução from './seções/Solução.vue'
+    import Tecnologia from './seções/Tecnologia.vue'
+    import Beneficios from './seções/Beneficios.vue';
+    import Contato from './seções/Contato.vue';
 
 
 export default {
