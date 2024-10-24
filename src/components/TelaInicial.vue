@@ -16,7 +16,7 @@
     </div>
     
     <div class="text-corBranca text-[72px] font-semibold leading-[5rem] py-[10%] max-w-2xl 
-    mobile:text-[50px] mobile:leading-none mobile:max-w-fit mobile:py-[160px] mobile:font-bold">
+    mobile:text-[50px] m-mobile:text-[40px] mobile:leading-none mobile:max-w-fit mobile:py-[160px] mobile:font-bold">
         <h1>Monitoramento Inteligente para Saúde Bovina</h1>
     </div>
 </template>
