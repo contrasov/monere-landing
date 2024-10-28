@@ -1,6 +1,6 @@
 <script setup>
-import Header from './components/TelaInicial.vue'
-import Principal from './components/Principal.vue'
+  import Header from './components/TelaInicial.vue'
+  import Principal from './components/Principal.vue'
 </script>
 
 <template>

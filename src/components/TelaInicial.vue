@@ -2,7 +2,7 @@
     <div class="flex justify-between">
         <div class="flex flex-row items-center gap-9">
             <img src="/src/assets/logo-monere.svg">
-            <ul class="flex gap-4 text-corBranca mobile:hidden">
+            <ul class="flex gap-4 text-corBranca mobile:hidden m-mobile:hidden">
                 <li @click="scrollToSection('sobre')"><a href="#">Sobre</a></li>
                 <li @click="scrollToSection('problemas')"><a href="#">Problemas</a></li>
                 <li @click="scrollToSection('solucao')"><a href="#">Solução</a></li>
