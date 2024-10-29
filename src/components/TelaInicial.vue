@@ -18,11 +18,6 @@
     mobile:text-[50px] m-mobile:text-[40px] mobile:leading-none mobile:max-w-fit mobile:py-[160px] mobile:font-bold">
         <h1>Monitoramento Inteligente para Saúde Bovina</h1>
     </div>
-    <div class="flex justify-center ">
-        <button class="tracking-widest flex justify-center bg-corVerdeClaro rounded-lg px-[15px] py-[20px] text-corBranca text-2xl">
-            Conheça mais sobre nós!
-        </button>
-    </div>
 </template>
 
 <script>
